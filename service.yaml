@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: name-of-service
+spec:
+  selector:
+          app: myapp #insert label of the deployment
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 8081 
+      nodePort: 30000 
+      targetPort: 80 
