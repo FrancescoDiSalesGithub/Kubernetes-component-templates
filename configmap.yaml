@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configmap-example
+data:
+  # property-like keys; each key maps to a simple value
+  value-example: "3"
+  value_file_name_example: "user-interface.properties"
+
+  # file-like keys
+  obj.properties: |
+          value=2
+       
+  
