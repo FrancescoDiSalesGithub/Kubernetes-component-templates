@@ -1,0 +1,15 @@
+version: 3
+services:
+                container1:
+                           image: repository/image
+                           ports:
+                                   - 8080:8080
+                           environment:
+                                   - ME_CONFIG_MONGODB_ADMINUSERNAME=admin
+                container2:
+                           image: repository/image
+                           ports:
+                                   - 8080:8080
+                           environment:
+                                   - ME_CONFIG_MONGODB_ADMINUSERNAME=admin
+
